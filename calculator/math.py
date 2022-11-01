@@ -1,5 +1,6 @@
 class Calculator:
-    def min(self, left_val: int, right_val: int):
-        if not isinstance(left_val, int) or not isinstance(right_val, int):
+    def min(self, left_int_val: int, right_int_val: int):
+        if (not isinstance(left_int_val, int)
+                or not isinstance(right_int_val, int)):
             raise TypeError
-        return left_val if left_val < right_val else right_val
+        return left_int_val if left_int_val < right_int_val else right_int_val
